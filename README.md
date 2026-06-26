@@ -625,6 +625,39 @@ Kami sangat menghargai kontribusi dari komunitas! Berikut cara berkontribusi:
 
 ---
 
+## ☕ Support
+
+<p align="center">
+  <sub>If you like this project, you can support me by buying a coffee!</sub>
+</p>
+
+<br>
+
+<p align="center">
+  <a href="https://www.buymeacoffee.com/istofiyusuf">
+    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" width="180" alt="Buy Me a Coffee">
+  </a>
+</p>
+
+<br>
+
+<p align="center">
+  <a href="[https://saweria.co/istofiyusuf](https://saweria.co/yusufcr)">
+    <img src="https://img.shields.io/badge/Saweria-Donate-red?style=flat-square&logo=heart&logoColor=white" alt="Saweria">
+  </a>
+  &nbsp;
+  <a href="[https://trakteer.id/isthofi_yusuf](https://trakteer.id/isthofi_yusuf)https://trakteer.id/isthofi_yusuf">
+    <img src="https://img.shields.io/badge/Trakteer-Donate-red?style=flat-square&logo=heart&logoColor=white" alt="Trakteer">
+  </a>
+  &nbsp;
+  <a href="https://github.com/sponsors/istofiyusuf">
+    <img src="https://img.shields.io/badge/GitHub-Sponsor-30363D?style=flat-square&logo=githubsponsors&logoColor=white" alt="GitHub Sponsor">
+  </a>
+</p>
+
+
+---
+
 ## Credits
 
 <div align="center">

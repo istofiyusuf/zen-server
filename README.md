@@ -402,41 +402,125 @@ Security	Helmet + CORS + Rate Limit	-
 
 ---
 
-## API Endpoints
-```bash
-Method	Endpoint	Description
-GET	/api/health	Health check
-POST	/api/v1/auth/register	Register user
-POST	/api/v1/auth/login	Login user
-GET	/api/v1/auth/me	Get current user
-POST	/api/v1/auth/logout	Logout user
-PUT	/api/v1/auth/password	Change password
-GET	/api/v1/system/stats	System statistics
-GET	/api/v1/websites	List websites
-POST	/api/v1/websites	Create website
-PUT	/api/v1/websites/:id	Update website
-DELETE	/api/v1/websites/:id	Delete website
-POST	/api/v1/websites/:id/start	Start website
-POST	/api/v1/websites/:id/stop	Stop website
-GET	/api/v1/files/list	List files
-POST	/api/v1/files/mkdir	Create folder
-GET	/api/v1/files/read	Read file
-DELETE	/api/v1/files/delete	Delete file
-GET	/api/v1/packages/installed	List packages
-GET	/api/v1/packages/search	Search packages
-POST	/api/v1/packages/install	Install package
-POST	/api/v1/packages/remove	Remove package
-POST	/api/v1/terminal/exec	Execute command
-POST	/api/v1/terminal/cd	Change directory
-GET	/api/v1/terminal/pwd	Current directory
-GET	/api/v1/settings	Get settings
-PUT	/api/v1/settings	Update settings
-GET	/api/v1/databases	List databases
-POST	/api/v1/databases	Create database
-POST	/api/v1/backup	Create backup
-GET	/api/v1/backups	List backups
-POST	/api/v1/restore	Restore backup
-```
+## API Reference
+
+Zen Server menyediakan **32 REST API endpoints** yang terorganisir dalam 9 kelompok. Semua endpoint (kecuali login/register) memerlukan autentikasi JWT via header `Authorization: Bearer <token>`.
+
+---
+
+### Authentication
+
+| Method | Endpoint | Auth | Description |
+|--------|----------|:----:|-------------|
+| `POST` | `/api/v1/auth/register` | ✗ | Register user baru |
+| `POST` | `/api/v1/auth/login` | ✗ | Login user |
+| `GET` | `/api/v1/auth/me` | ✓ | Get current user |
+| `POST` | `/api/v1/auth/logout` | ✓ | Logout user |
+| `PUT` | `/api/v1/auth/password` | ✓ | Change password |
+
+---
+
+### System Monitoring
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| `GET` | `/api/v1/system/stats` | CPU, RAM, Storage, Battery, Network |
+| `GET` | `/api/health` | Server health check |
+
+---
+
+### Website Manager
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| `GET` | `/api/v1/websites` | List all websites |
+| `POST` | `/api/v1/websites` | Create website |
+| `GET` | `/api/v1/websites/:id` | Get website detail |
+| `PUT` | `/api/v1/websites/:id` | Update website |
+| `DELETE` | `/api/v1/websites/:id` | Delete website |
+| `POST` | `/api/v1/websites/:id/start` | Start website |
+| `POST` | `/api/v1/websites/:id/stop` | Stop website |
+| `GET` | `/api/v1/websites/:id/logs` | Get website logs |
+
+**Website Types:** `static` | `php` | `nodejs` | `python`
+
+---
+
+### File Manager
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| `GET` | `/api/v1/files/list?path=./` | List files & folders |
+| `GET` | `/api/v1/files/read?file=path` | Read file content |
+| `POST` | `/api/v1/files/mkdir` | Create folder |
+| `DELETE` | `/api/v1/files/delete` | Delete file/folder |
+| `POST` | `/api/v1/files/rename` | Rename file/folder |
+
+---
+
+### Package Manager
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| `GET` | `/api/v1/packages/installed` | List installed packages |
+| `GET` | `/api/v1/packages/search?q=` | Search packages |
+| `POST` | `/api/v1/packages/install` | Install package |
+| `POST` | `/api/v1/packages/remove` | Remove package |
+
+---
+
+### Web Terminal
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| `POST` | `/api/v1/terminal/exec` | Execute shell command |
+| `POST` | `/api/v1/terminal/cd` | Change directory |
+| `GET` | `/api/v1/terminal/pwd` | Print working directory |
+
+---
+
+### Database Manager
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| `GET` | `/api/v1/databases` | List databases |
+| `POST` | `/api/v1/databases` | Create database |
+| `DELETE` | `/api/v1/databases/:id` | Delete database |
+
+**Database Types:** `sqlite` | `mariadb` | `postgresql`
+
+---
+
+### Settings
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| `GET` | `/api/v1/settings` | Get user settings |
+| `PUT` | `/api/v1/settings` | Update settings |
+
+---
+
+### Backup & Restore
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| `POST` | `/api/v1/backup` | Create backup |
+| `GET` | `/api/v1/backups` | List backups |
+| `GET` | `/api/v1/backup/download/:name` | Download backup file |
+| `DELETE` | `/api/v1/backup/:name` | Delete backup |
+| `POST` | `/api/v1/restore` | Restore from backup |
+
+---
+
+### Response Format
+
+**Success Response:**
+```json
+{
+  "success": true,
+  "message": "Operation successful",
+  "data": { ... }
+}
 
 ---
 
@@ -469,7 +553,7 @@ MIT License - Lihat LICENSE untuk detail.
 ---
 
 ## Credits
-Dibangun dengan sepenuh hati oleh [Istofi ](https://github.com/istofiyusuf/)
+Dibangun dengan sepenuh hati oleh [IstofiYusuf](https://github.com/istofiyusuf/)
 
 ---
 

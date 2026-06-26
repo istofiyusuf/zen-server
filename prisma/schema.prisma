@@ -1,0 +1,100 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../node_modules/.prisma/client"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String    @id @default(uuid())
+  username  String    @unique
+  password  String
+  email     String    @unique
+  role      String    @default("admin")
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  settings  Settings?
+  sessions  Session[]
+}
+
+model Session {
+  id        String   @id @default(uuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  token     String   @unique
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+}
+
+model Settings {
+  id            String   @id @default(uuid())
+  userId        String   @unique
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  theme         String   @default("dark")
+  language      String   @default("id")
+  port          Int      @default(3000)
+  autoStart     Boolean  @default(false)
+  autoBackup    Boolean  @default(false)
+  notifications Boolean  @default(true)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+model Website {
+  id          String   @id @default(uuid())
+  name        String
+  domain      String?
+  port        Int
+  type        String   @default("static")
+  phpVersion  String?
+  nodeVersion String?
+  status      String   @default("stopped")
+  path        String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  logs        Log[]
+}
+
+model Database {
+  id        String   @id @default(uuid())
+  name      String
+  type      String
+  path      String?
+  size      Int?
+  status    String   @default("stopped")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Package {
+  id          String   @id @default(uuid())
+  name        String   @unique
+  version     String?
+  status      String   @default("installed")
+  installedAt DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Log {
+  id        String   @id @default(uuid())
+  type      String
+  message   String
+  level     String   @default("info")
+  source    String?
+  websiteId String?
+  website   Website? @relation(fields: [websiteId], references: [id], onDelete: SetNull)
+  createdAt DateTime @default(now())
+}
+
+model Backup {
+  id        String   @id @default(uuid())
+  name      String
+  type      String
+  path      String
+  size      Int?
+  status    String   @default("completed")
+  createdAt DateTime @default(now())
+}

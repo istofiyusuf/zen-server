@@ -1,0 +1,7 @@
+version: "2"
+authtoken: your-ngrok-token-here
+tunnels:
+  zen-server:
+    addr: 3000
+    proto: http
+    hostname: your-domain.ngrok-free.app

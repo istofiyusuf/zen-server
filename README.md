@@ -629,54 +629,37 @@ Kami sangat menghargai kontribusi dari komunitas! Berikut cara berkontribusi:
 
 <div align="center">
 
-### Built by
+### Built with
 
-<a href="https://github.com/istofiyusuf">
-  <img src="https://img.shields.io/badge/Istofi%20Yusuf-Developer-3b82f6?style=for-the-badge&logo=github&logoColor=white&labelColor=111111" alt="Istofi Yusuf">
-</a>
+<br>
 
-<br><br>
+<p>
+  <img src="https://img.shields.io/badge/Next.js-14.2-black?style=for-the-badge&logo=next.js&logoColor=white&labelColor=111111" alt="Next.js">
+  &nbsp;
+  <img src="https://img.shields.io/badge/Express-4.21-black?style=for-the-badge&logo=express&logoColor=white&labelColor=111111" alt="Express">
+  &nbsp;
+  <img src="https://img.shields.io/badge/Prisma-5.22-black?style=for-the-badge&logo=prisma&logoColor=white&labelColor=111111" alt="Prisma">
+  &nbsp;
+  <img src="https://img.shields.io/badge/TailwindCSS-3.4-black?style=for-the-badge&logo=tailwindcss&logoColor=white&labelColor=111111" alt="TailwindCSS">
+  &nbsp;
+  <img src="https://img.shields.io/badge/TypeScript-5.3-black?style=for-the-badge&logo=typescript&logoColor=white&labelColor=111111" alt="TypeScript">
+  &nbsp;
+  <img src="https://img.shields.io/badge/Framer_Motion-10.18-black?style=for-the-badge&logo=framer&logoColor=white&labelColor=111111" alt="Framer Motion">
+</p>
 
-<table>
-  <tr>
-    <td align="center" width="96">
-      <a href="https://nextjs.org">
-        <img src="https://raw.githubusercontent.com/nextauthjs/next-auth/main/docs/static/img/nextjs-logo.png" width="48" height="48" alt="Next.js">
-      </a>
-      <br>Next.js 14
-    </td>
-    <td align="center" width="96">
-      <a href="https://expressjs.com">
-        <img src="https://raw.githubusercontent.com/nicehash/rest-clients-demo/main/public/expressjs.png" width="48" height="48" alt="Express">
-      </a>
-      <br>Express
-    </td>
-    <td align="center" width="96">
-      <a href="https://www.prisma.io">
-        <img src="https://raw.githubusercontent.com/prisma/presskit/main/Logos/Prisma-DarkSymbol.png" width="48" height="48" alt="Prisma">
-      </a>
-      <br>Prisma
-    </td>
-    <td align="center" width="96">
-      <a href="https://tailwindcss.com">
-        <img src="https://raw.githubusercontent.com/tailwindlabs/tailwindcss/HEAD/.github/logo-dark.svg" width="48" height="48" alt="TailwindCSS">
-      </a>
-      <br>TailwindCSS
-    </td>
-    <td align="center" width="96">
-      <a href="https://www.typescriptlang.org">
-        <img src="https://raw.githubusercontent.com/remojansen/logo.ts/master/ts.png" width="48" height="48" alt="TypeScript">
-      </a>
-      <br>TypeScript
-    </td>
-    <td align="center" width="96">
-      <a href="https://www.framer.com/motion">
-        <img src="https://raw.githubusercontent.com/framer/motion/main/packages/framer-motion/public/favicon.svg" width="48" height="48" alt="Framer">
-      </a>
-      <br>Framer
-    </td>
-  </tr>
-</table>
+<p>
+  <img src="https://img.shields.io/badge/SQLite-3.44-black?style=for-the-badge&logo=sqlite&logoColor=white&labelColor=111111" alt="SQLite">
+  &nbsp;
+  <img src="https://img.shields.io/badge/JWT-Auth-black?style=for-the-badge&logo=jsonwebtokens&logoColor=white&labelColor=111111" alt="JWT">
+  &nbsp;
+  <img src="https://img.shields.io/badge/Zustand-State-black?style=for-the-badge&logo=zustand&logoColor=white&labelColor=111111" alt="Zustand">
+  &nbsp;
+  <img src="https://img.shields.io/badge/React_Icons-5.0-black?style=for-the-badge&logo=react&logoColor=white&labelColor=111111" alt="React Icons">
+  &nbsp;
+  <img src="https://img.shields.io/badge/Helmet-Security-black?style=for-the-badge&logo=helmet&logoColor=white&labelColor=111111" alt="Helmet">
+  &nbsp;
+  <img src="https://img.shields.io/badge/Bcrypt-Hash-black?style=for-the-badge&logo=lock&logoColor=white&labelColor=111111" alt="Bcrypt">
+</p>
 
 </div>
 

@@ -548,14 +548,201 @@ Termux:Services	Storage 500MB+	Firefox Android
 
 ---
 
+---
+
 ## Lisensi
-MIT License - Lihat LICENSE untuk detail.
+
+<p align="center">
+  <a href="https://github.com/istofiyusuf/zen-server/blob/main/LICENSE">
+    <img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge&logo=opensourceinitiative&logoColor=white&labelColor=111111" alt="MIT License">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/Open%20Source-Yes-success?style=flat-square&logo=opensourceinitiative&logoColor=white" alt="Open Source">
+  </a>
+  <a href="https://github.com/istofiyusuf/zen-server/blob/main/LICENSE">
+    <img src="https://img.shields.io/badge/Free%20to%20Use-Yes-success?style=flat-square&logo=checkmarx&logoColor=white" alt="Free to Use">
+  </a>
+  <a href="https://github.com/istofiyusuf/zen-server">
+    <img src="https://img.shields.io/badge/Year-2026-black?style=flat-square&logo=clock&logoColor=white" alt="2026">
+  </a>
+</p>
+
+<p align="center">
+  <sub>
+    MIT License - Bebas menggunakan, memodifikasi, dan mendistribusikan.<br>
+    Lihat file <a href="LICENSE">LICENSE</a> untuk teks lisensi lengkap.
+  </sub>
+</p>
+
+---
+
+<p align="center">
+  <strong>Zen Server</strong> — Transform your Android into a powerful web server.
+</p>
+
+<p align="center">
+  <sub>Made with dedication for the Termux community</sub>
+</p>
+
+<p align="center">
+  <a href="https://github.com/istofiyusuf">
+    <img src="https://img.shields.io/badge/GitHub-istofiyusuf-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=111111" alt="GitHub">
+  </a>
+</p>
+
+---
+
+---
+
+## Kontribusi
+
+<p align="center">
+  <a href="https://github.com/istofiyusuf/zen-server/issues/new">
+    <img src="https://img.shields.io/badge/Contributions-Welcome-brightgreen?style=for-the-badge&logo=github&logoColor=white&labelColor=111111" alt="Contributions Welcome">
+  </a>
+</p>
+
+Kami sangat menghargai kontribusi dari komunitas! Berikut cara berkontribusi:
+
+1. **Fork** repository ini
+2. Buat **branch** baru (`git checkout -b feature/amazing-feature`)
+3. **Commit** perubahan (`git commit -m 'Add amazing feature'`)
+4. **Push** ke branch (`git push origin feature/amazing-feature`)
+5. Buat **Pull Request**
+
+### Yang Bisa Dikontribusikan
+- 🐛 Bug fixes
+- ✨ Fitur baru
+- 📝 Dokumentasi
+- 🎨 UI/UX improvements
+- 🔧 Optimasi performa
+- 🌐 Terjemahan
+
+---
 
 ---
 
 ## Credits
-Dibangun dengan sepenuh hati oleh [IstofiYusuf](https://github.com/istofiyusuf/)
+
+<div align="center">
+
+### Built by
+
+<a href="https://github.com/istofiyusuf">
+  <img src="https://img.shields.io/badge/Istofi%20Yusuf-Developer-3b82f6?style=for-the-badge&logo=github&logoColor=white&labelColor=111111" alt="Istofi Yusuf">
+</a>
+
+<br><br>
+
+<table>
+  <tr>
+    <td align="center" width="96">
+      <a href="https://nextjs.org">
+        <img src="https://raw.githubusercontent.com/nextauthjs/next-auth/main/docs/static/img/nextjs-logo.png" width="48" height="48" alt="Next.js">
+      </a>
+      <br>Next.js 14
+    </td>
+    <td align="center" width="96">
+      <a href="https://expressjs.com">
+        <img src="https://raw.githubusercontent.com/nicehash/rest-clients-demo/main/public/expressjs.png" width="48" height="48" alt="Express">
+      </a>
+      <br>Express
+    </td>
+    <td align="center" width="96">
+      <a href="https://www.prisma.io">
+        <img src="https://raw.githubusercontent.com/prisma/presskit/main/Logos/Prisma-DarkSymbol.png" width="48" height="48" alt="Prisma">
+      </a>
+      <br>Prisma
+    </td>
+    <td align="center" width="96">
+      <a href="https://tailwindcss.com">
+        <img src="https://raw.githubusercontent.com/tailwindlabs/tailwindcss/HEAD/.github/logo-dark.svg" width="48" height="48" alt="TailwindCSS">
+      </a>
+      <br>TailwindCSS
+    </td>
+    <td align="center" width="96">
+      <a href="https://www.typescriptlang.org">
+        <img src="https://raw.githubusercontent.com/remojansen/logo.ts/master/ts.png" width="48" height="48" alt="TypeScript">
+      </a>
+      <br>TypeScript
+    </td>
+    <td align="center" width="96">
+      <a href="https://www.framer.com/motion">
+        <img src="https://raw.githubusercontent.com/framer/motion/main/packages/framer-motion/public/favicon.svg" width="48" height="48" alt="Framer">
+      </a>
+      <br>Framer
+    </td>
+  </tr>
+</table>
+
+</div>
 
 ---
 
-<p align="center"> <strong>Zen Server</strong> - Transform your Android into a powerful web server. </p><p align="center"> <sub>Made with ❤️ for the Termux community</sub> </p>
+## Support the Project
+
+<p align="center">
+  <a href="https://github.com/istofiyusuf/zen-server">
+    <img src="https://img.shields.io/badge/⭐%20Star%20on%20GitHub-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=111111" alt="Star on GitHub">
+  </a>
+  &nbsp;
+  <a href="https://github.com/istofiyusuf/zen-server/issues">
+    <img src="https://img.shields.io/badge/🐛%20Report%20Bug-ef4444?style=for-the-badge&logo=github&logoColor=white&labelColor=111111" alt="Report Bug">
+  </a>
+  &nbsp;
+  <a href="https://github.com/istofiyusuf/zen-server/fork">
+    <img src="https://img.shields.io/badge/🔱%20Fork%20Repo-10b981?style=for-the-badge&logo=github&logoColor=white&labelColor=111111" alt="Fork Repo">
+  </a>
+</p>
+
+---
+
+## Contributors
+
+<p align="center">
+  <a href="https://github.com/istofiyusuf/zen-server/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=istofiyusuf/zen-server" alt="Contributors">
+  </a>
+</p>
+
+<p align="center">
+  <sub>Want to contribute? Read our <a href="#kontribusi">contribution guide</a>.</sub>
+</p>
+
+---
+
+<p align="center">
+  <a href="https://github.com/istofiyusuf/zen-server">
+    <img src="https://img.shields.io/badge/Made%20with-Termux-black?style=for-the-badge&logo=android&logoColor=white&labelColor=111111" alt="Made with Termux">
+  </a>
+  &nbsp;
+  <a href="https://github.com/istofiyusuf/zen-server">
+    <img src="https://img.shields.io/badge/Runs%20on-Android-success?style=for-the-badge&logo=android&logoColor=white&labelColor=111111" alt="Runs on Android">
+  </a>
+</p>
+
+---
+
+<p align="center">
+  <strong>⚡ Zen Server</strong> — <em>Transform your Android into a powerful web server.</em>
+</p>
+
+<p align="center">
+  <sub>
+    © 2026 <a href="https://github.com/istofiyusuf">Istofi Yusuf</a>. 
+    Released under the <a href="LICENSE">MIT License</a>.
+  </sub>
+</p>
+
+<p align="center">
+  <sub>Built with dedication in Indonesia • Powered by Kopi Hitam ☕</sub>
+</p>
+
+<p align="center">
+  <a href="#zen-server">
+    <img src="https://img.shields.io/badge/⬆%20Back%20to%20Top-3b82f6?style=flat-square&logo=arrowup&logoColor=white" alt="Back to Top">
+  </a>
+</p>

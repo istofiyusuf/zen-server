@@ -469,7 +469,7 @@ MIT License - Lihat LICENSE untuk detail.
 ---
 
 ## Credits
-Dibangun dengan sepenuh hati oleh [Istofi ](https://github.com/istofiyusuf/)
+Dibangun dengan sepenuh hati oleh [IstofiYusuf](https://github.com/istofiyusuf/)
 
 ---
 

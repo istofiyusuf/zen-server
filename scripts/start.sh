@@ -3,27 +3,35 @@
 echo "Starting Zen Server..."
 echo ""
 
-# Check if already running
-if [ -f "zen-server.pid" ]; then
-    PID=$(cat zen-server.pid)
-    if kill -0 $PID 2>/dev/null; then
-        echo "Zen Server is already running (PID: $PID)"
-        echo "Use 'bash scripts/stop.sh' to stop first"
-        exit 1
-    fi
-fi
+# Kill existing processes
+pkill -f "node api/server" 2>/dev/null
+pkill -f "next start" 2>/dev/null
+sleep 1
 
 # Start backend API
-echo "Starting API server on port 3001..."
-node api/server.js &
+echo "[1/2] Starting API server..."
+node api/server-termux.js &
 API_PID=$!
-echo $API_PID > api.pid
+sleep 2
 
-# Start Next.js frontend
-echo "Starting frontend on port 3000..."
+# Check if API started
+if kill -0 $API_PID 2>/dev/null; then
+    echo "  API Server: RUNNING (PID: $API_PID)"
+else
+    echo "  API Server: FAILED TO START"
+fi
+
+# Start frontend
+echo "[2/2] Starting frontend..."
 npx next start &
 FRONTEND_PID=$!
-echo $FRONTEND_PID > zen-server.pid
+sleep 2
+
+if kill -0 $FRONTEND_PID 2>/dev/null; then
+    echo "  Frontend: RUNNING (PID: $FRONTEND_PID)"
+else
+    echo "  Frontend: FAILED TO START"
+fi
 
 echo ""
 echo "========================================="
@@ -32,5 +40,5 @@ echo "  Frontend: http://localhost:3000"
 echo "  API:      http://localhost:3001"
 echo "========================================="
 echo ""
-echo "PID: $FRONTEND_PID"
+echo "PIDs: API=$API_PID Frontend=$FRONTEND_PID"
 echo "Use 'bash scripts/stop.sh' to stop"

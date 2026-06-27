@@ -212,17 +212,28 @@ pkg install nodejs git curl wget -y
 cd ~
 git clone https://github.com/istofiyusuf/zen-server.git
 cd zen-server
+
+# Install
+```bash
+npm install --legacy-peer-deps --no-optional
+npm install bcryptjs --legacy-peer-deps
 ```
 
-# Jalankan script instalasi
+# Build
+```bash
+npm run build
+```
+
+# Install
 ```bash
 bash scripts/install.sh
 ```
 
-# Start server
+# Start (backend + frontend otomatis)
 ```bash
 bash scripts/start.sh
 ```
+
 
 Buka browser Android dan akses: http://localhost:3000
 
